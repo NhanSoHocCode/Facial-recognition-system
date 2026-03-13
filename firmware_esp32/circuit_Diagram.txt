@@ -1,0 +1,40 @@
+* Install thu vien 
+Vào menu: File → Preferences
+Ở dòng Additional Boards Manager URLs, dán thêm:
+https://espressif.github.io/arduino-esp32/package_esp32_index.json
+
+Vào Tools → Board → Boards Manager…
+Gõ esp32 vào ô tìm kiếm.
+Chọn “esp32 by Espressif Systems” → Install.
+
+1. Keypad 4x4
+Hàng (Rows):
+    R1 → GPIO 4
+    R2 → GPIO 5
+    R3 → GPIO 18
+    R4 → GPIO 19
+Cột (Columns):
+    C1 → GPIO 23
+    C2 → GPIO 25
+    C3 → GPIO 26
+    C4 → GPIO 27
+2. LCD I2C
+    LCD GND → GND
+    LCD VCC → 5V
+    LCD SDA → GPIO 21
+    LCD SCL → GPIO 22
+3. AS608
+    TX → GPIO 16
+    RX → GPIO 17
+4. Servo 
+    Signal(yellow) → GPIO32
+5. ESP32 Cam
+    RX → U0T ESP32 Cam
+    TX → U0R ESP32 Cam
+6. HC-SR503 
+    OUT → GPIO 14
+7. Buzzer 
+    OUT → GPIO 15
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+*ý tưởng sẽ là esp32 cam sẽ kết nối với máy tính truyền ảnh qua cho python xử lý, việc cuả esp32 chỉ gởi APi qua và kích hoạt chức năng facePrint

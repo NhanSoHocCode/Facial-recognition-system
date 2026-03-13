@@ -1,0 +1,19 @@
+# Core Frameworks
+flask
+customtkinter
+
+# Data & Image Processing
+numpy
+opencv-python
+pillow
+mediapipe
+
+# Machine Learning & AI
+torch
+torchvision
+onnxruntime-gpu; sys_platform == 'linux' or sys_platform == 'win32'
+# onnxruntime # Clean option if no GPU
+
+# Database & Networking
+mysql-connector-python
+requests

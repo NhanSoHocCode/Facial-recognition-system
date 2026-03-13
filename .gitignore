@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+*.pth
+*.onnx
+
+# Bỏ qua file cấu hình chứa mật khẩu (nếu có)
+#config_secret.py
+
+# Giữ lại file .gitkeep để folder rỗng vẫn được push lên
+!backend/static/access_logs/.gitkeep
